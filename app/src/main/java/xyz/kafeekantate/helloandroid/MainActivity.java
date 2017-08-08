@@ -1,5 +1,6 @@
 package xyz.kafeekantate.helloandroid;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,8 +17,13 @@ public class MainActivity extends AppCompatActivity {
         uranaiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("Hello");
+                openUranaiScreen();
             }
         });
+    }
+
+    private void openUranaiScreen() {
+        Intent intent = new Intent(this, UranaiActivity.class);
+        startActivity(intent);
     }
 }
