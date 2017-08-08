@@ -7,10 +7,16 @@
     tools:context="xyz.kafeekantate.helloandroid.MainActivity">
 
     <Button
-        android:id="@+id/占いボタン"
+        android:id="@+id/uranaiButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:text="今日の運勢"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="230dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
